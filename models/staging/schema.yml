@@ -8,14 +8,29 @@ sources:
     tables:
       - name: _airbyte_raw_department
         description: 'Table stores department data'
+
       - name: _airbyte_raw_employee
         description: 'Table stores employee data'
+
       - name: _airbyte_raw_employeedepartmenthistory
         description: 'Table stores department history for employees'
+
       - name: _airbyte_raw_employeepayhistory
         description: 'Tables store employeepayhistory'
+
       - name: _airbyte_raw_jobcandidate
         description: 'Table stores job candidates'
+
       - name: _airbyte_raw_shift
         description: 'Table stores employee shift history'
+
+
+models:
+  - name: stg_employees
+    description: 'This is a test for stg_employees'
+    columns:
+      - name: businessentityid
+        tests:
+          - not_null
+          - unique
       
