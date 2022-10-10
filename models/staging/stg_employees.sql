@@ -1,6 +1,6 @@
 {{config(materialized = 'table')}}
 
-
+-- This extracts the src employee table
 with employees_stg_t1 as (
     select 
 
