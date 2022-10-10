@@ -27,10 +27,12 @@ sources:
 
 models:
   - name: stg_employees
-    description: 'This is a test for stg_employees'
+    description: '{{ doc("stg_employee") }}'
     columns:
       - name: businessentityid
+        description: 'This is the primary key of stg_employees'
         tests:
           - not_null
           - unique
+            
       
